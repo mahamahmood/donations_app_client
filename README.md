@@ -1,3 +1,12 @@
+# Donation App
+
+## Summery
+ This app is built to give users the ability to add items they would like to donate in a list. It's built using Rails for the backend and React for the frontend.
+
+ ## Link to Live App
+ [Donations App](https://donations-app-client.herokuapp.com/)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
