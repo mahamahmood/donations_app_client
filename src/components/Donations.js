@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import CreateDonation from './CreateDonation.js';
 
 function Donations(props) {
     const [donations, setDonations] = useState([]);
@@ -24,14 +23,13 @@ function Donations(props) {
 
     return (
         <>
-            <CreateDonation />
             <h2>List of Items to Donate</h2>
-            {donations.map( donation => {
+            {donations.map(donation => {
                 return (
-                    <div key={donation.id}>
-                        <h4>Item Name: {donation.name}</h4>
-                        <h4>Category: {donation.category}</h4>
-                        <h4>Current Condition: {donation.condition}</h4>
+                    <div className="donations" key={donation.id}>
+                        <h4>Item Name: <small>{donation.name}</small></h4>
+                        <h4>Category: <small>{donation.category}</small></h4>
+                        <h4>Current Condition: <small>{donation.condition}</small></h4>
                         <img src={donation.img} alt={donation.name} /><br />
                     </div>
                 )
