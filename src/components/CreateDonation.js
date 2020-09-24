@@ -19,7 +19,7 @@ function App() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.post('/items', formInputs);
+            const response = await axios.post('https://donations-app-api.herokuapp.com/items', formInputs);
             const createdDonation = response.data
             await updateFormInputs({
                 name: '',

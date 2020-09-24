@@ -5,7 +5,7 @@ function Donations(props) {
 
     const getDonations = async () => {
         try {
-            const response = fetch('/items')
+            const response = fetch('https://donations-app-api.herokuapp.com/items')
             const donations = await (await response).json();
             console.log(donations);
             setDonations(donations);
